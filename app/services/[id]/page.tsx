@@ -12,7 +12,7 @@ export default function ServiceDetailPage() {
   const params = useParams();
   const id = params.id as string;
   const service = services.find(s => s.id === id);
-  const serviceReviews = reviews.  nm,./?mn bxvb h    .filter(r => r.service === service?.title);
+  const serviceReviews = reviews.filter(r => r.service === service?.title);
 
   if (!service) {
     return (
