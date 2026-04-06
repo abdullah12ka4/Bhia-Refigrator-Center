@@ -4,9 +4,9 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import { CheckCircle, Phone, MessageCircle, ArrowLeft } from 'lucide-react';
 import * as Icons from 'lucide-react';
-import { Button } from '../components/ui/button';
-import { ReviewCard } from '../components/ReviewCard';
-import { services, reviews } from '../data/mockData';
+import { Button } from '../../components/ui/button';
+import { ReviewCard } from '../../components/ReviewCard';
+import { services, reviews } from '../../data/mockData';
 
 export default function ServiceDetailPage() {
   const { id } = useParams();

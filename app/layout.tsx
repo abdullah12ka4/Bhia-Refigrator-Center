@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Header } from "./components/Header";
+import { HeaderWrapper } from "./components/HeaderWrapper";
 import { ThemeProvider } from "./context/ThemeContext";
 
 const geistSans = Geist({
@@ -31,7 +31,7 @@ export default function RootLayout({
     >
       <body cz-shortcut-listen='true' className="min-h-full flex flex-col">
         <ThemeProvider defaultTheme="light" storageKey="next-ui-theme">
-          <Header/>
+          <HeaderWrapper/>
           {children}
         </ThemeProvider>
       </body>

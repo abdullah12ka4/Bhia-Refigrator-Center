@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { CheckCircle, XCircle, Phone } from 'lucide-react';
 import { Button } from '../../components/ui/button';
