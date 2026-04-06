@@ -6,6 +6,7 @@ import { useTheme } from '../context/ThemeContext';
 import { Button } from './ui/button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -30,13 +31,7 @@ export function Header() {
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">B</span>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-lg leading-tight text-slate-900 dark:text-white">Brother Refrigerator</span>
-              <span className="text-xs text-slate-600 dark:text-slate-400">Appliance & Home Services</span>
-            </div>
+          <Image alt='Shop Logo' src='/logo.png' width={100} height={30} objectFit='cover' />
           </Link>
 
           {/* Desktop Navigation */}

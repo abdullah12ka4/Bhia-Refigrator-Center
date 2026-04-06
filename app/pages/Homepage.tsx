@@ -10,21 +10,32 @@ import Link from 'next/link';
 
 const heroSlides = [
   {
-    title: 'Professional Appliance Repair Services',
-    subtitle: 'Fast, Reliable & Affordable Solutions',
-    image: 'https://images.unsplash.com/photo-1759434775823-40d8b9577a41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920',
+    title: 'Bhai Refrigeration Center',
+    subtitle: 'Expert AC, Fridge & Home Appliance Repair Services',
+    image: 'shopOverview.jpeg',
   },
   {
-    title: 'Expert AC & Refrigerator Repair',
-    subtitle: 'Same Day Service Available',
-    image: 'https://images.unsplash.com/photo-1630459065645-549fe5a56db4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920',
+    title: 'AC Repair & Installation Services',
+    subtitle: 'Fast Cooling Solutions at Your Doorstep',
+    image: 'https://plus.unsplash.com/premium_photo-1682126009570-3fe2399162f7?q=80&w=870&auto=format&fit=crop',
   },
   {
-    title: 'Complete Home Service Solutions',
-    subtitle: 'Trusted by Thousands of Customers',
-    image: 'https://images.unsplash.com/photo-1716395300732-3b36a3be038e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1920',
+    title: 'Refrigerator & Deep Freezer Repair',
+    subtitle: 'Quick Diagnosis & Reliable Fixing',
+    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1920&auto=format&fit=crop',
   },
-];
+  {
+    title: 'Washing Machine & UPS Repair',
+    subtitle: 'Affordable & Professional Repair Solutions',
+    image: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?q=80&w=1920&auto=format&fit=crop',
+  },
+  {
+    title: 'Fan, Iron & Oven Repair Services',
+    subtitle: 'Complete Home Appliance Service Center',
+    image: 'https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+]
+
 
 export default function Homepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -155,7 +166,7 @@ export default function Homepage() {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1716395300732-3b36a3be038e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"
+                src="logo.png"
                 alt="Professional technician"
                 className="rounded-2xl shadow-2xl"
               />
