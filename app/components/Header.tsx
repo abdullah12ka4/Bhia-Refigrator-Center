@@ -27,23 +27,6 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur dark:bg-slate-900/95 dark:border-slate-800">
       <div className="container mx-auto px-4">
-        {/* Top bar */}
-        <div className="hidden md:flex items-center justify-between py-2 text-sm border-b border-slate-200 dark:border-slate-800">
-          <div className="flex items-center gap-6 text-slate-600 dark:text-slate-400">
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              <Phone className="w-4 h-4" />
-              <span>+123 456 7890</span>
-            </a>
-            <a href="mailto:info@brotherrefrigerator.com" className="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-              <Mail className="w-4 h-4" />
-              <span>info@brotherrefrigerator.com</span>
-            </a>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-slate-600 dark:text-slate-400">Open: Mon-Sat 8AM-8PM</span>
-          </div>
-        </div>
-
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-2">
